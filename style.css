@@ -1,0 +1,137 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0;
+}
+
+.myDiv{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(214, 214, 214);
+}
+
+.flexContainer{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+}
+
+.positionRelative{
+    position: relative;
+}
+
+.positionAbsolute{
+    position: absolute;
+    right: 250px;
+    top: 300px;
+}
+
+.capitais{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: rgb(218, 218, 218);
+    padding: 50px;
+}
+
+.capitais div{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+
+.capitais img{
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    background-color: rgb(141, 177, 255);
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item1 { grid-area: header;}
+.item2 { grid-area: menu;}
+.item3 { 
+    grid-area: main;
+    background-image: url(https://source.unsplash.com/Q6jyy3T-g1A/1280x720);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item4 { 
+    grid-area: right;
+    background-image: url(https://source.unsplash.com/7-2rPMvS5rU/800×600);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item5 { grid-area: footer;}
+
+.grid-container {
+    display: grid;
+    height: 600px;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 20% 1fr 50px;
+    grid-template-areas: 
+    'header header header'
+    'menu main right'
+    'menu footer footer';
+}
+
+a:link{
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(38, 0, 255);
+}
+
+a:hover{
+    color: rgb(218, 218, 218);
+    font-weight: bold;
+}
+
+#circle{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background: #b0dfff;
+    background-image: url(https://source.unsplash.com/yFzvo0ozUcU/800×600);
+    z-index: -1;
+    clip: rect(0px,60px,200px,0px);
+}
+
+div#circle:hover{
+    background: white;
+}
+
+#img-test {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+}
